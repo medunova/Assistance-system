@@ -1,0 +1,102 @@
+Brain Vision Data Exchange Header File Version 1.0
+; Data created by the Vision Recorder
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=Blink_visual_instruction_16_01_17_05-tv.avg
+MarkerFile=Blink_visual_instruction_16_01_17_05-tv.vmrk
+DataFormat=BINARY
+; Data orientation: MULTIPLEXED=ch1,pt1, ch2,pt1 ...
+DataOrientation=MULTIPLEXED
+NumberOfChannels=5
+; Sampling interval in microseconds
+SamplingInterval=1000
+SegmentationType=MARKERBASED
+SegmentDataPoints=1100
+Averaged=YES
+AveragedSegments=15
+
+[Binary Infos]
+BinaryFormat=IEEE_FLOAT_32
+
+[Channel Infos]
+; Each entry: Ch<Channel number>=<Name>,<Reference channel name>,
+; <Resolution in "Unit">,<Unit>, Future extensions..
+; Fields are delimited by commas, some fields might be omitted (empty).
+; Commas in channel names are coded as "\1".
+Ch1=Fp1,,1,µV
+Ch2=Fp2,,1,µV
+Ch3=Fz,,1,µV
+Ch4=Cz,,1,µV
+Ch5=Pz,,1,µV
+
+[Comment]
+
+BrainVision Recorder Professional   -   V. 1.21.0102
+
+
+A m p l i f i e r  S e t u p
+============================
+Number of channels: 5
+Sampling Rate [Hz]: 1000
+Sampling Interval [µS]: 1000
+
+Channels
+--------
+#     Name      Phys. Chn.    Resolution / Unit   Low Cutoff [s]   High Cutoff [Hz]   Notch [Hz]    Gradient         Offset
+1     Fp1         9          0.0488281 µV             DC                0              Off
+2     Fp2         2          0.0488281 µV             DC                0              Off
+3     Fz          15         0.0488281 µV             DC                0              Off
+4     Cz          13         0.0488281 µV             DC                0              Off
+5     Pz          16         0.0488281 µV             DC                0              Off
+
+S o f t w a r e  F i l t e r s
+==============================
+#     Low Cutoff [s]   High Cutoff [Hz]   Notch [Hz]
+1      0.795775         20                 Off
+2      0.795775         20                 Off
+3      0.795775         20                 Off
+4      0.795775         20                 Off
+5      0.795775         20                 Off
+
+
+
+S e g m e n t a t i o n  /  A v e r a g i n g
+=============================================
+Markers
+-------
+Stimulus    S  6        
+
+Interval
+--------
+Prestimulus [ms]: 100
+Poststimulus [ms]: 1000
+
+Artifact Rejection
+------------------
+	Gradient:        Disabled
+	Max. Difference: Disabled
+	Amplitude:       Disabled
+	Low Activity:    Disabled
+	Test Interval:   0 ms to 700 ms
+	Untested Channels: ---
+
+Averaging
+---------
+	Averaging is On
+	Baseline Correction is On
+
+Miscellaneous
+-------------
+	Max. Segments: unlimited
+
+
+Data / Ref / Gnd Electrodes Selected Impedance Measurement Range: 0 - 5 kOhm
+Impedance [kOhm] at 17:23:53 :
+Fp1:          1
+Fp2:          1
+Fz:           1
+Cz:           0
+Pz:           1
+Ref:          0
+Gnd:          1
