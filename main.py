@@ -42,7 +42,7 @@ from logic import feature_vector
 from numpy.random import seed
 from keras.models import load_model
 from datashape.coretypes import null
-
+import os
 seed(1)
 
 
@@ -52,7 +52,9 @@ mne.set_log_level('ERROR')
 # os.environ["TF_CPP_MIN_LOG_LEVEL"]="4"
 
 # Set path to raw data folder 
-DATA_FOLDER ='C:/Users/Anet/eclipse-workspace/Classification/raw_data/'
+
+DATA_FOLDER =os.getcwd()+'/raw_data/'
+print(DATA_FOLDER)
 
 
 # Set EEG event list - instruction
